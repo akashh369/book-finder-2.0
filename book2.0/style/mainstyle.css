@@ -1,0 +1,79 @@
+/* html{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/bg-default.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+*{
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+}
+body{
+    background-image: url(/img/bg-default.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+
+}
+.searchbar{
+    position: relative;
+    top: 250px;
+    left: 15vw;
+}
+.searchbar input{
+    height: 65px;
+    border-radius: 50px;
+    font-size: 35px;
+    width: 50vw;
+    background-color: rgba(38, 81, 122, 0.304);
+    padding: 5px 28px ;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgba(10, 41, 70, 0.552) ;
+    min-width: 250px;
+}
+.searchbar input::placeholder{
+    text-align: center;
+    color: rgba(31, 25, 25, 0.962);
+}
+.searchbar img{
+    position: relative;
+    left: -95px;
+    top: 20px;
+    border-radius: 10%;
+}
+.searchbar img:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 400px){
+    .searchbar{
+        left: 0px;
+    }
+    .searchbar img{
+        position: absolute;
+        left: 240px;
+    }
+    /* this part still need to be done */
+    .card{
+        flex-direction: column;
+        width: 20vw;
+    }
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.card{
+    display: flex;
+    text-align: center;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.592);
+    padding: 10px 15px;
+    
+}
