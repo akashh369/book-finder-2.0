@@ -13,7 +13,7 @@ function display(ele){
         var a=document.createElement('div');
         a.innerHTML=`
             <div class="card">
-            <img src="${e['volumeInfo']['imageLinks']['thumbnail']}" width="150p" height="220px" />
+            <img src="${e['volumeInfo']['imageLinks']['thumbnail']}" alt="/img/alt.jpg" width="150p" height="220px" />
             <div class="card-body">
             <h2>${e['volumeInfo']['title']}</h2>
             <h3>
