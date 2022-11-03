@@ -20,9 +20,11 @@ body{
 
 }
 .searchbar{
-    position: relative;
+    margin: 0px auto;
+    position: absolute;
     top: 250px;
     left: 15vw;
+    overflow: hidden;
 }
 .searchbar input{
     height: 65px;
@@ -49,14 +51,23 @@ body{
 .searchbar img:hover{
     cursor: pointer;
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 450px){
     .searchbar{
-        left: 0px;
+        left: 2vw;
     }
     .searchbar img{
         position: absolute;
         left: 240px;
     }
+
+    .gotop{
+        left: 0vw;
+    }
+    .gotop img{
+        position: absolute;
+        left: 240px;
+    }
+
     /* this part still need to be done */
     .card{
         flex-direction: column;
@@ -64,9 +75,12 @@ body{
     }
 }
 .container{
+    position: relative;
+    top: 102px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0px 10px;
     
 }
 .card{
@@ -75,5 +89,76 @@ body{
     width: 400px;
     background-color: rgba(255, 255, 255, 0.592);
     padding: 10px 15px;
-    
+    margin: 8px;
 }
+
+.card-body{
+    margin-left: 5px;
+}
+
+.gotop{
+    margin: 0px auto;
+    position: absolute;
+    top: 250px;    
+    left: 15vw;
+    overflow: hidden;
+    transition: transform 1s ease-out;
+    transform: translate(0px,-245px);
+}
+
+.gotop input{
+    height: 65px;
+    border-radius: 50px;
+    font-size: 35px;
+    width: 50vw;
+    background-color: rgba(38, 81, 122, 0.304);
+    padding: 5px 28px ;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgba(10, 41, 70, 0.552) ;
+    min-width: 250px;
+}
+.gotop input::placeholder{
+    text-align: center;
+    color: rgba(31, 25, 25, 0.962);
+}
+.gotop img{
+    position: relative;
+    left: -95px;
+    top: 20px;
+    border-radius: 10%;
+}
+.gotop img:hover{
+    cursor: pointer;
+}
+span{
+    font-size: 26px;
+    font-weight: bold;
+}
+.card-body h2{
+    text-decoration: underline
+}
+p{
+    margin-top: 10px;
+    background-color: rgba(241, 100, 19, 0.647);
+    color: azure;
+    font-size: 20px ;
+    padding: 3px 7px;
+}
+p:hover{
+    color: blue;
+    background-color: rgba(241, 100, 19);
+    cursor: pointer;
+}
+.card:hover{
+    transition: background-color 1s ease-in-out,transform 0.8s;
+    transform: scale(1.2);
+    background-color: white;
+}
+
+
+
+
+
+
+
